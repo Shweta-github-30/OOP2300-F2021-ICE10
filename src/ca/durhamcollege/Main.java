@@ -16,11 +16,11 @@ public class Main {
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);
-        String prompt = "";
+        String prompt;
         int numOfPoints = 4;
 
         // instantiates the collection container
-        Vector<Vector2D> points = new Vector<Vector2D>();
+        Vector<Vector2D> points = new Vector<>();
 
         // builds a Vector of 4 points
         for (int i = 0; i < numOfPoints; i++)
@@ -51,7 +51,7 @@ public class Main {
 
             Vector2D randomVector2D = RandomVector.Instance().createVector2D(points.get(i), points.get(i+1));
             System.out.println("\n--------------------------------------------------------------" );
-            System.out.println("The Random Vector is: " + randomVector2D.toString());
+            System.out.println("The Random Vector is: " + randomVector2D);
             System.out.println("--------------------------------------------------------------\n" );
 
             points.add(randomVector2D);
